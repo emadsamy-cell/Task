@@ -1,0 +1,224 @@
+.features{
+
+    background-color: rgb(0 0 0 / 5%);
+    display: flex;
+    flex-wrap: wrap;
+justify-content: space-evenly;
+@include respond-phone{
+    flex-direction: column;
+}
+}
+.feature-1{
+    flex: 0 0 12%;
+    text-align: center;
+    
+   margin: 2rem 0rem;
+   @include respond-phone{
+       margin: 1rem 0rem;
+   }
+   @include respond-ipad{
+       flex: 1 0 12%;
+   }
+   &__h1{
+       margin-bottom: .5rem;
+   }
+}
+.u-margin-top{
+    margin-top: 4rem;
+}
+.icontest{
+    height: 2.5rem;
+    fill: #5c48c8;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 2.5rem;
+
+}
+.link{
+    display: inline-block;
+    margin-top: 2rem;
+}
+.icon-container{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    display: inline-block;
+    border: 2px solid #5c48c8;
+    border-radius: 5px;
+}
+.u-margin-left{
+    margin-left:3rem;
+}
+.u-margin-right-small{margin-right:2rem;}
+.u-margin-bottom-small{
+margin-bottom: 1.3rem;
+}
+
+.top{
+    background-color: white;
+    display:flex;
+justify-content: center;
+margin: 3rem 5rem;
+@include respond-ipad{
+    margin: 3rem 0rem;
+    width: 100%;
+}
+
+}
+.img-container{
+    content: "";
+    flex:0 0 30%;
+    @include respond-ipad{
+        flex:0 0 40%;
+    }
+    @include respond-phone{
+        flex:0 0 45%;
+        align-items: center;
+    }
+}
+.image-cont{
+    width: 100%;
+    height: 100%;
+}
+.content{
+    flex:0 0 30%;
+margin-top: 1.5rem;
+@include respond-ipad{
+    flex:0 0 40%;
+}
+@include respond-phone{
+    flex:1 0 45%;
+}
+
+&__h2{
+font-size: 2rem;
+margin-bottom: 1rem;
+@include respond-phone{
+    margin-bottom: .2rem;
+}
+}
+
+&__span{
+color:#5c48c8 ;
+font-weight: 700;
+}
+
+&__featuer{
+display: flex;
+margin-top: 2rem;
+@include respond-phone{
+    margin-top: 1rem;
+}
+}
+
+&__icon-container{
+    margin-right: 1.2rem;
+    @include respond-phone{margin-right: .7rem;}
+    /* padding: 1rem; */
+    height: 3.5rem;
+    width: 3.5rem;
+    border: 2px solid #5c48c8;
+    border-radius: 100rem;
+    position: relative;
+}
+
+
+
+}
+.icon-content{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 2rem;
+    height: 3rem;
+    fill:#5c48c8;
+}
+
+
+.form{
+    width:60% ;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4rem;
+    @include respond-phone{
+        width: 100%;
+    }
+    @include respond-ipad{
+        width: 80%;
+    }
+
+    &__header{
+        font-size: 2.5rem;
+        color: #4a4a4a;
+    }
+
+    &__p{
+        font-size:1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    &__form{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        @include respond-phone{
+            width: 100%;
+        }
+    }
+
+    &__topside{
+        display: flex;
+        justify-content: center;
+        @include respond-phone{
+            display: block;
+        }
+    }
+
+    &__input{
+
+        width:100%;
+        padding-left: 1.5rem;
+        padding-right:2.5rem ;
+        padding-top: 1rem;
+        padding-bottom:1rem ;
+        outline: none;
+        border: 1px dotted #999;
+       border-radius: 5px;
+        color: inherit;
+        &::placeholder{
+            color: inherit;
+            font-size: 1.4rem;
+        }
+    }
+
+   
+
+}
+.form__link{
+    margin-top: 4rem;
+    text-align: center;
+    @include respond-phone{margin-top: 2rem;}
+    @include respond-ipad{margin-top: 2.5rem;}
+    &__1{
+            font-size: 1.6rem;
+        text-decoration: none;
+        color:#bebaba;
+        background-color: #5c48c8;
+        text-align: center;
+        padding: 1rem 4rem;
+        border-radius: 150rem;
+        @include respond-phone{
+            padding: .5rem 4rem;
+            display: inline-block;
+        }
+        @include respond-ipad{
+            display: inline-block;
+            padding: 1rem 4rem;
+        }
+    }
+}
